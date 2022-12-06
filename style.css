@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(fon.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    
+}
+.field {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    background: url(field.jpg);
+    background-size: cover;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px splid black;
+
+}
+.cell {
+    width: 25px;
+    height: 25px;
+    
+}
+.snakehead {
+    /* background-color: red; */
+}
+.snakebody {
+    background-color: #8ec73d;
+    border-radius: 20%;
+    border: 1px solid green;
+}
+.mouse {
+    background-color: black;
+    background: url(apple.png);
+    background-size: 25px 25px;
+}
+.score {
+    display: inline-flex;
+    padding-left: 10px;
+    animation-name: score;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+@keyframes score {
+    0% {font-size: 50px;}
+    100% {font-size: 80px;}
+}
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    line-height: 50px;
+    font-size: 50px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    animation-duration: 2s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes main {
+    0%{bottom: 0px;}
+    100%{bottom: -300px;
+    }
+    
+}
+.snakePng {
+    margin-left: 50px;
+    display: flex;
+}
+.pictures {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    padding-top: 100px;
+}
+.headup {
+    background-image: url(headup.png);
+    background-size: 25px 25px;
+    
+    
+}
+.headdown {
+    background-image: url(headdown.png);
+    background-size: 25px 25px;
+   
+}
+.headleft {
+    background-image: url(headleft.png);
+    background-size: 25px 25px;
+    
+}
+.headright {
+    background-image: url(headright.png);
+    background-size: 25px 25px;
+    
+}
+.button {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 10%;
+    margin-left: 10px;
+    background-color: rgba(231, 255, 0, 0.2);
+    font-size: 20px;
+}
+.button:hover {
+    cursor: pointer;
+}
